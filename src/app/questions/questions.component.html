@@ -1,0 +1,11 @@
+<!-- question-list.component.html -->
+<div *ngIf="questions">
+    <h2>List of Questions</h2>
+    <ul>
+      <li *ngFor="let question of questions">
+        {{ question.text }}
+       
+      </li>
+    </ul>
+  </div>
+  
