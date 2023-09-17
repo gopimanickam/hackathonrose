@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-register',
@@ -16,7 +17,7 @@ export class RegisterComponent {
   userName:'',
   password:''
  };
- constructor(){}
+ constructor(private router:Router){}
  ngOnInit(): void{
   const localData =localStorage.getItem('signupUsers')
   if(localData !=null){
@@ -36,6 +37,7 @@ export class RegisterComponent {
    };
  }
  onLogin() {
+  this.router.navigate(['/teststart']);
   debugger; // This will pause the execution for debugging purposes
 
   const isUserExist = this.signupUsers.find(
@@ -50,3 +52,5 @@ export class RegisterComponent {
   }
 }
 }
+
+
