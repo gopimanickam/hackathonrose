@@ -7,6 +7,15 @@
     width: auto;
     max-width: 400px; /* Adjust the width as needed */
   }
+  .fixed-progress-bar {
+    position: fixed;
+    top: 10;
+    left: 10;
+    right: 10;
+    z-index: 999; /* Adjust the z-index as needed to make it appear above other content */
+    background-color: white; /* Set the desired background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  }
   
 .container {
     max-width: 800px;
